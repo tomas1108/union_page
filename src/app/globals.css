@@ -356,7 +356,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 1040px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
@@ -370,7 +370,9 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: rgb(255, 255, 255);
 }
+
 
 
 .heading-7 {
