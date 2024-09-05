@@ -15,7 +15,7 @@ const Banner = () => {
           글로벌 증권 거래 플랫폼&양적 헤지 기구 및 안정성과 신뢰성을 보장하는 디지털 자산 거래 및 자산 관리 서비스 제공
         </div>
         <div className="m_btnwrap">
-          <a href="usd2.php" className="service_btn w-button">
+          <a href="usd2.php" className="service_btn w-buttonMain">
             거래하기
           </a>
         </div>

@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
       <>
-        <footer className="footer">
+        <footer className="footerMain">
           <div className="fwrap">
             <div className="finfo">
               <a href="bitcall/main.html" aria-current="page" className="b_korbotbtn w-inline-block w--current">

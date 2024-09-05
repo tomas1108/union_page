@@ -21,12 +21,14 @@ export default function Header() {
   return (
     <div className="header">
       <div className="logo">
+        <a href="/">
         <img src="https://kr-union.com/bitcall/bitcall_short1.png" alt="Logo" />
+        </a>
       </div>
 
       <div className="navbar">
         <ul>
-          <li><a href="#">거래하기</a></li>
+          <li><a href="chart">거래하기</a></li>
           <li className="dropdown">
             <a href="#" onClick={toggleDropdown}>회사소개 ▾</a>
             {isOpen && (
@@ -61,8 +63,12 @@ export default function Header() {
         {/* <button>12,200,000원</button>
         <button>내정보</button>
         <button>로그아웃</button> */}
+        <a href='/login'>
         <button>로그인</button>
+        </a>
+        <a href='/register'>
         <button>회원가입</button>
+        </a>
       </div>
     </div>
   );
