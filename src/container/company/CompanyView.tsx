@@ -1,7 +1,6 @@
-// src/components/Company.tsx
+import Image from 'next/image';
 import React from 'react';
 import './company.css';
-
 
 const Company: React.FC = () => {
   return (
@@ -31,14 +30,14 @@ const Company: React.FC = () => {
             </div>
             <div className="col-12">
               <figure>
-                <img className="desktop" src="https://kr-union.com/img/pc-1.png" alt="" />
-                {/* <img className="mobile" src="https://kr-union.com/img/%EB%AA%A8%EB%B0%94%EC%9D%BC-1.png" alt="" /> */}
+                <Image className="desktop" src="https://kr-union.com/img/pc-1.png" alt="" width={800} height={600} />
+                {/* <Image className="mobile" src="https://kr-union.com/img/%EB%AA%A8%EB%B0%94%EC%9D%BC-1.png" alt="" width={800} height={600} /> */}
               </figure>
             </div>
             <div className="col-12">
               <figure>
-                <img className="desktop" src="https://kr-union.com/img/pc-2.png" alt="" />
-                {/* <img className="mobile" src="https://kr-union.com/img/%EB%AA%A8%EB%B0%94%EC%9D%BC-2.png" alt="" /> */}
+                <Image className="desktop" src="https://kr-union.com/img/pc-2.png" alt="" width={800} height={600} />
+                {/* <Image className="mobile" src="https://kr-union.com/img/%EB%AA%A8%EB%B0%94%EC%9D%BC-2.png" alt="" width={800} height={600} /> */}
               </figure>
             </div>
           </div>
@@ -53,8 +52,8 @@ const Company: React.FC = () => {
             </div>
             <div className="col-12">
               <figure>
-                <img className="desktop" src="https://kr-union.com/comm_k/img/main/pciw2.jpg" alt="" />
-                {/* <img className="mobile" src="https://kr-union.com/comm_k/img/main/pcim2.jpg" alt="" /> */}
+                <Image className="desktop" src="https://kr-union.com/comm_k/img/main/pciw2.jpg" alt="" width={800} height={600} />
+                {/* <Image className="mobile" src="https://kr-union.com/comm_k/img/main/pcim2.jpg" alt="" width={800} height={600} /> */}
               </figure>
             </div>
           </div>
@@ -68,7 +67,6 @@ const Company: React.FC = () => {
         className="scrollspy-example scrollArea"
         style={{ paddingBottom: '0' }}
       >
-        {/* 01 - About : Start */}
         <section id="A1">
           <div className="container com">
             <div className="row" style={{ height: 'auto' }}>
@@ -81,50 +79,50 @@ const Company: React.FC = () => {
                     <br />
                   </div>
                   <div className="body">
-                    1956년에 설립된 'Union Investment'은 국내 최초 재정거래 시스템 트레이딩
-                    기업으로 각국의 통화를 거래하고 있습니다. 우리는 <b>재정거래</b>를 중심으로,
-                    <b>퀀트 전략, 마켓 메이킹, 시장중립 전략</b> 등 다양한 거래방식을 채택하여 사용하고 있으며,
-                    이중 몇몇 서비스를 소수의 VIP회원을 대상으로 제공하고 있습니다.
-                  </div>
-                  <div className="body">
-                    우리는 독자적으로 개발한 원천기술을 보유하고 있으며, 전세계 다양한 회원을 대상으로
-                    서비스를 제공하고 있습니다. 모든 우리 회원과 파트너사가
-                    세계시장에서 <b>장기적으로 성장</b>할 수 있도록 최선을 다해 돕고 있습니다.
-                  </div>
+  1956년에 설립된 &apos;Union Investment&apos;은 국내 최초 재정거래 시스템 트레이딩
+  기업으로 각국의 통화를 거래하고 있습니다. 우리는 <b>재정거래</b>를 중심으로,
+  <b>퀀트 전략, 마켓 메이킹, 시장중립 전략</b> 등 다양한 거래방식을 채택하여 사용하고 있으며,
+  이중 몇몇 서비스를 소수의 VIP회원을 대상으로 제공하고 있습니다.
+</div>
+
+<div className="body">
+  우리는 독자적으로 개발한 원천기술을 보유하고 있으며, 전세계 다양한 회원을 대상으로
+  서비스를 제공하고 있습니다. 모든 우리 회원과 파트너사가
+  세계시장에서 <b>장기적으로 성장</b>할 수 있도록 최선을 다해 돕고 있습니다.
+</div>
+
                 </div>
               </div>
               <div className="img col-12 col-md-6">
                 <figure>
-                  <img src="https://kr-union.com/comm_k/img/photo/A1/01.jpg" alt="" />
+                  <Image src="https://kr-union.com/comm_k/img/photo/A1/01.jpg" alt="" width={800} height={600} />
                 </figure>
                 <figure>
-                  <img src="https://kr-union.com/comm_k/img/photo/A1/02c4ca.jpg?1" alt="" />
+                  <Image src="https://kr-union.com/comm_k/img/photo/A1/02c4ca.jpg?1" alt="" width={800} height={600} />
                 </figure>
                 <figure>
-                  <img src="https://kr-union.com/comm_k/img/photo/A1/03.jpg" alt="" />
+                  <Image src="https://kr-union.com/comm_k/img/photo/A1/03.jpg" alt="" width={800} height={600} />
                 </figure>
               </div>
             </div>
           </div>
         </section>
-        {/* 01 - About : End */}
 
-        {/* 02 - HighLights : Start */}
         <section id="A2">
           <div className="container com">
             <div className="row" style={{ height: 'auto' }}>
               <div className="img col-12 col-md-6">
                 <figure>
-                  <img src="https://kr-union.com/comm_k/img/photo/A1/03.jpg" alt="" />
+                  <Image src="https://kr-union.com/comm_k/img/photo/A1/03.jpg" alt="" width={800} height={600} />
                 </figure>
                 <figure>
-                  <img src="https://kr-union.com/comm_k/img/photo/A2/01.jpg" alt="" />
+                  <Image src="https://kr-union.com/comm_k/img/photo/A2/01.jpg" alt="" width={800} height={600} />
                 </figure>
               </div>
               <div className="text col-12 col-md-6">
                 <div className="textWrap">
                   <div className="sectionTitle">
-                    <h5>`UNION`을 운영하는 사람들 <br /> 그리고 우리의 가치</h5>
+                    <h5>&apos;UNION&apos;을 운영하는 사람들 <br /> 그리고 우리의 가치</h5>
                   </div>
                   <div className="body row">
                     <dl className="col-12 col-sm-6">
@@ -157,7 +155,6 @@ const Company: React.FC = () => {
             </div>
           </div>
         </section>
-        {/* 02 - HighLights : End */}
       </div>
     </>
   );
