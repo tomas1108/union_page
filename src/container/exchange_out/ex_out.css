@@ -1,0 +1,106 @@
+/* Khung ngoài */
+.exchange-out-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Hướng dẫn */
+.guide-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.step-box {
+    background-color: #eaeaea;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.step-box h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.step-box p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Account Information */
+.account-info-section {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.account-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.account-info-table td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.account-info-table input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.withdraw-button, .inquiry-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.withdraw-button:hover, .inquiry-button:hover {
+    background-color: #0056b3;
+}
+
+/* Withdrawal History */
+.withdrawal-history-section {
+    margin-top: 20px;
+}
+
+.withdrawal-history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.withdrawal-history-table th, .withdrawal-history-table td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.withdrawal-history-table th {
+    background-color: #f9f9f9;
+}
+
+.withdrawal-history-table td {
+    background-color: white;
+}

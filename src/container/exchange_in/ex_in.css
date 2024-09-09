@@ -1,0 +1,195 @@
+/* Khung ngoài */
+.exchange-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+   
+  }
+  
+  /* Hướng dẫn */
+  .guide-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    
+  }
+  
+ /* Step Box Flex Alignment */
+.step-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+   
+  }
+  
+  .step-box h3 {
+    flex-shrink: 0; /* Prevents the step from shrinking */
+    font-weight: bold;
+    margin: 0;
+    min-width: 80px; /* Adjust this to align the width of step numbers */
+    font-size: 1.1rem; /* Slightly larger font for steps */
+  }
+  
+  .step-box p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .step-box span {
+    color: red;
+    display: block; /* Ensure span starts on a new line */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .step-box {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .step-box h3 {
+      min-width: auto; /* Remove fixed width for mobile view */
+    }
+  }
+  
+  
+  /* Form nhập thông tin */
+  .account-info-section {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .account-info-section h3 {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .inquiry-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .inquiry-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Form nhập thông tin */
+  .form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-field {
+    flex: 1;
+  }
+  
+  .form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* History section */
+.history-section {
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .history-section h3 {
+    font-weight: bold;
+    margin: 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .history-section p {
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .history-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .history-table thead {
+    background-color: #f1f1f1;
+  }
+  
+  .history-table th,
+  .history-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .history-table th {
+    font-weight: bold;
+  }
+  
+  .history-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .history-table td {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .form-section {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .history-table th,
+    .history-table td {
+      padding: 8px;
+    }
+  }
+  

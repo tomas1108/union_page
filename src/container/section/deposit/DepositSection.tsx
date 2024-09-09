@@ -23,7 +23,7 @@ const DepositSection: React.FC = () => {
                         </dd>
                     </dl>
                 </div>
-                <form id="depositForm" action="deposit_user.php" method="post">
+                <form id="depositForm" action="deposit" method="post">
                     <div className="frm_write">
                         <ul className="frm_list" style={{ paddingLeft: 0 }}>
                             <li>

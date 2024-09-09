@@ -85,7 +85,7 @@ const Header: React.FC = () => {
             </div>
             {isDepositMenuOpen && (
               <div className="menuboxwrap active">
-                <a href="exchange_in.php" className="menubtn w-inline-block">
+                <a href="exchange_in" className="menubtn w-inline-block">
                   <div className="menubox _3">
                     <div className="m_txt">입금</div>
                     <div className="m_txt2">
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </a>
-                <a href="exchange_out.php" className="menubtn w-inline-block">
+                <a href="exchange_out" className="menubtn w-inline-block">
                   <div className="menubox _3">
                     <div className="m_txt">출금</div>
                     <div className="m_txt2">
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
             </div>
             {isSupportMenuOpen && (
               <div className="menuboxwrap active">
-                <a href="qna.php" className="menubtn w-inline-block">
+                <a href="qna" className="menubtn w-inline-block">
                   <div className="menubox _4">
                     <div className="m_txt">1:1문의하기</div>
                     <div className="m_txt2">
@@ -131,7 +131,7 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </a>
-                <a href="message.php" className="menubtn w-inline-block">
+                <a href="message" className="menubtn w-inline-block">
                   <div className="menubox _4">
                     <div className="m_txt">메세지</div>
                     <div className="m_txt2">

@@ -1,66 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-  --foreground-rgb: 255, 255, 255; /* Đổi foreground thành màu trắng */
-  --background-start-rgb: 255, 255, 255; /* Đổi background start thành màu trắng */
-  --background-end-rgb: 255, 255, 255; /* Đổi background end thành màu trắng */
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-.root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
 
 
 
@@ -1412,6 +1352,7 @@ chart css
   -ms-flex-align: center;
   align-items: center;
   margin-top: -41px;
+  color: white;
 }
 
 .main_bottombtn {
@@ -2133,44 +2074,49 @@ h2 {
 }
 
 deposit css
+
+
+
+
+
+
+
 .section.dark {
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px #ffffff;
+  padding: 10px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px #ccc; /* Light shadow */
 }
+
 .hd3 {
-  font-size: 1.5em;
+  font-size: 1.3em; /* Smaller font size for heading */
   color: #000;
 }
+
 h3 {
-  font-size: 24px;
-  line-height: 30px;
-  margin-top: 20px;
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 15px;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .titset.hd3 + .userinifoset, .hd3 + .msgbox, .titset.hd3 + .frm_write {
-  margin-top: 10px;
+  margin-top: 8px; /* Adjusted margin for spacing */
 }
 
 .msgbox {
-  background: #eee;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  padding: 15px;
-}
-
-.msgbox .msg_dlist {
-  font-size: 0;
-  color: #000;
+  background: #f5f5f5; /* Lighter background */
+  border: 1px solid #ccc; /* Match the design's borders */
+  border-radius: 8px;
+  padding: 10px; /* Less padding for a tighter box */
 }
 
 .msgbox .msg_dlist > dt {
-  width: 10%;
-  font-size: 1.4rem;
+  width: 15%; /* Slightly wider labels */
+  font-size: 1.2rem;
 }
 
 .msgbox .msg_dlist > dt, .msgbox .msg_dlist > dd {
@@ -2178,40 +2124,10 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: top;
   font-size: 1rem;
 }
-html * dt {
-  font-weight: 700;
-}
 
-
-.msgbox .msg_dlist > dd:first-of-type {
-  margin-top: 0;
-}
-.msgbox .msg_dlist > dd + dt, .msgbox .msg_dlist > dt + dd {
-  margin-top: 20px;
-}
 .msgbox .msg_dlist > dd {
-  width: 90%;
-}
-.msgbox .msg_dlist > dt, .msgbox .msg_dlist > dd {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 1rem;
-}
-
-
-
-.section.dark + .section {
-  margin-top: 20px;
-}
-.section.dark {
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px #ccc;
-}
-
-.tb_cap + #myResultDiv, .tb_cap + .tb_frm {
-  margin-top: 5px;
-  color: #000;
+  width: 85%; /* Match the space with dt */
+  margin-top: 0;
 }
 
 .tb_frm {
@@ -2221,25 +2137,45 @@ html * dt {
 .tb_frm > table {
   width: 100%;
   border-collapse: collapse;
-  border-right: 1px hidden #fff;
-}
-.tb_frm > table > thead > tr > th, .tb_frm > table > tbody > tr > th, .tb_frm > table > tbody > tr > td {
-  border: 1px solid #d4d3d3;
-  border-width: 0 0 1px 0;
-  padding: 15px 10px;
-  text-align: center;
-}
-.tb_frm > table thead th {
-  background: #eee;
-  font-weight: 400;
+  border-right: none;
 }
 
-.tb_frm > table > thead > tr > th, .tb_frm > table > tbody > tr > th, .tb_frm > table > tbody > tr > td {
+.tb_frm > table > thead > tr > th, 
+.tb_frm > table > tbody > tr > th, 
+.tb_frm > table > tbody > tr > td {
   border: 1px solid #d4d3d3;
-  border-width: 0 0 1px 0;
-  padding: 15px 10px;
+  padding: 12px 8px; /* Adjusted padding for smaller cells */
   text-align: center;
 }
+
+.tb_frm > table thead th {
+  background: #f7f7f7; /* Match the lighter header background */
+  font-weight: 500; /* Slightly bolder */
+}
+
+/* Button styles */
+button {
+  background-color: #1D6AE5; /* Blue color matching the image */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #155ab2; /* Darker blue on hover */
+}
+
+
+
+
+
+
+
+
+
 
 
 qna css

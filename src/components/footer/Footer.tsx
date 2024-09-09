@@ -27,16 +27,16 @@ export default function Footer() {
               */}
               <div className="f_wrap">
                 <div className="ftxt">회사소개</div>
-                <a href="company.php" className="flink w-inline-block">
+                <a href="company" className="flink w-inline-block">
                   <div className="ftxt2">UINON 소개</div>
                 </a>
               </div>
               <div className="f_wrap">
                 <div className="ftxt">입출금</div>
-                <a href="exchange_in.php" className="flink w-inline-block">
+                <a href="exchange_in" className="flink w-inline-block">
                   <div className="ftxt2">입금</div>
                 </a>
-                <a href="exchange_out.php" className="flink w-inline-block">
+                <a href="exchange_out" className="flink w-inline-block">
                   <div className="ftxt2">출금</div>
                 </a>
                 {/* 
@@ -47,10 +47,10 @@ export default function Footer() {
               </div>
               <div className="f_wrap">
                 <div className="ftxt">고객지원</div>
-                <a href="qna.php" className="flink w-inline-block">
+                <a href="qna" className="flink w-inline-block">
                   <div className="ftxt2">1:1 문의하기</div>
                 </a>
-                <a href="message.php" className="flink w-inline-block">
+                <a href="message" className="flink w-inline-block">
                   <div className="ftxt2">메세지</div>
                 </a>
               </div>

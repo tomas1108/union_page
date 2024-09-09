@@ -1,0 +1,33 @@
+.message-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.message-header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.message-header-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.message-body {
+    padding: 20px;
+    text-align: center;
+    color: #555;
+    border-bottom: 1px solid #e0e0e0;
+}

@@ -117,7 +117,7 @@ const RegisterPage = () => {
         <div className="PageIntro__wrapper iqWrapper">
           <div className="PageIntro__content">
             <div className="PageIntroContent">
-              <h1 className="PageIntroContent__title">
+              {/* <h1 className="PageIntroContent__title">
                 <span>산업 분야</span>
               </h1>
               <div className="PageIntroContent__subtitle">
@@ -125,13 +125,13 @@ const RegisterPage = () => {
                   기존에 있던 기업부터 새로운 유망 기업까지, 현명한 투자 결정을
                   내리는 데 도움을 드리고자 모두 모았습니다.
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
         <div className="PageIntro__bg">
           <div className="PageIntro__bgGradient"></div>
-          <div className="PageIntro__bgImage"></div>
+          <div className="PageIntro__bgImage" ></div>
         </div>
       </div>
 
@@ -144,7 +144,7 @@ const RegisterPage = () => {
             <form
               name="margin-form"
               method="post"
-              action="signup.php"
+              action="signup"
               onSubmit={handleSubmit}
               autoComplete="off"
             >
@@ -379,7 +379,7 @@ const RegisterPage = () => {
                     <span className="Checkbox__text">
                       <span>
                         <a
-                          href="javascript:void(0);"
+                          href="#"
                           className="link"
                           onClick={() =>
                             openWindow(
@@ -410,7 +410,7 @@ const RegisterPage = () => {
                     <span className="Checkbox__text">
                       <span>
                         <a
-                          href="javascript:void(0);"
+                          href="#"
                           className="link"
                           onClick={() =>
                             openWindow(

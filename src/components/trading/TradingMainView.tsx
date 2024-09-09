@@ -358,7 +358,7 @@ const TradingPage: React.FC = () => {
                   <a href="chart" className="blue_topbtn w-button click">
                     거래소
                   </a>
-                  <a href="deposit" className="blue_topbtn w-button click">
+                  <a href="exchange_in" className="blue_topbtn w-button click">
                     자산 입출금
                   </a>
                   <a href="qna" className="blue_topbtn w-button click">
@@ -372,7 +372,7 @@ const TradingPage: React.FC = () => {
                 </div>
                 <div
                   className="top_myprofile"
-                  onClick={() => (window.location.href = "mypage.php")}
+                  onClick={() => (window.location.href = "mypage")}
                   style={{ cursor: "pointer" }}
                 >
                   <img
@@ -383,10 +383,10 @@ const TradingPage: React.FC = () => {
                   />
                   <div>test 님</div>
                 </div>
-                <a href="logout.php" className="loginregist login w-button">
+                <a href="logout" className="loginregist login w-button">
                   로그아웃
                 </a>
-                <a href="mypage.php" className="momenuclick2-n w-inline-block">
+                <a href="mypage" className="momenuclick2-n w-inline-block">
                   <img
                     src="img/user-user-circle.svg"
                     loading="lazy"
@@ -398,13 +398,13 @@ const TradingPage: React.FC = () => {
             </div>
             <div className="main_bottombtn" style={{ zIndex: 9999 }}>
               <div className="btnlist footer" id="bottom_menu_bar">
-                <a href="btc.php" className="blue_topbtn w-button click">
+                <a href="btc" className="blue_topbtn w-button click">
                   거래소
                 </a>
-                <a href="exchange_in.php" className="blue_topbtn w-button">
+                <a href="exchange_in" className="blue_topbtn w-button">
                   자산 입출금
                 </a>
-                <a href="qna.php" className="blue_topbtn w-button">
+                <a href="qna" className="blue_topbtn w-button">
                   고객센터
                 </a>
               </div>
@@ -469,7 +469,7 @@ const TradingPage: React.FC = () => {
                         }}
                       >
                         <div
-                          onClick={() => gourl("usd.php")}
+                          onClick={() => gourl("usd")}
                           className="time1"
                           style={{ width: "30%" }}
                         >
@@ -489,7 +489,7 @@ const TradingPage: React.FC = () => {
                           </button>
                         </div>
                         <div
-                          onClick={() => gourl("usd2.php")}
+                          onClick={() => gourl("usd2")}
                           className="time2"
                           style={{ width: "30%" }}
                         >
@@ -509,7 +509,7 @@ const TradingPage: React.FC = () => {
                           </button>
                         </div>
                         <div
-                          onClick={() => gourl("usd5.php")}
+                          onClick={() => gourl("usd5")}
                           className="time5"
                           style={{ width: "30%" }}
                         >
@@ -906,22 +906,22 @@ const TradingPage: React.FC = () => {
               </section>
 
               <div className="footer">
-    <div className="footer_block1" onClick={() => (window.location.href = "index.php")}>
+    <div className="footer_block1" onClick={() => (window.location.href = "/")}>
         <img src="images/logo_W.png" loading="lazy" alt="" className="logo_footer" />
     </div>
     <div className="footer_block2">
         <div className="footer_menu">
             <div className="footer_title">거래소</div>
-            <div onClick={() => (window.location.href = "btc.php")} className="footer_text">거래소</div>
+            <div onClick={() => (window.location.href = "btc")} className="footer_text">거래소</div>
         </div>
         <div className="footer_menu">
             <div className="footer_title">자산 입출금</div>
-            <div className="footer_text" onClick={() => (window.location.href = "exchange_in.php")}>입금</div>
-            <div className="footer_text" onClick={() => (window.location.href = "exchange_out.php")}>출금</div>
+            <div className="footer_text" onClick={() => (window.location.href = "exchange_in")}>입금</div>
+            <div className="footer_text" onClick={() => (window.location.href = "exchange_out")}>출금</div>
         </div>
         <div className="footer_menu">
             <div className="footer_title">고객센터</div>
-            <div className="footer_text" onClick={() => (window.location.href = "qna.php")}>문의내역</div>
+            <div className="footer_text" onClick={() => (window.location.href = "qna")}>문의내역</div>
         </div>
         <div className="footer_menu">
             <div className="footer_title">마이페이지</div>

@@ -33,7 +33,7 @@ const LoginPage = () => {
               method="post"
               name="LoginFrm"
               id="LoginFrm"
-              action="login_check.php"
+              action="login"
               autoComplete="off"
             >
               <div data-test-id="login-email-input" className="css-4k6kap e1yby6gu0">
