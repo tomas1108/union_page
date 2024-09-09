@@ -8,8 +8,8 @@ import TradingViewWidget from "@/components/trading/TradingView";
 
 
 export default function Home() {
-  return (
-    <div>
+  return (  
+    <div data-test-id="inner-layout-wrapper" className="css-3uqybw ep6b6450">
       <Header />
       <main>
         <Banner />

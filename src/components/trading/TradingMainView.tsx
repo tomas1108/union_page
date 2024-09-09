@@ -358,10 +358,10 @@ const TradingPage: React.FC = () => {
                   <a href="chart" className="blue_topbtn w-button click">
                     거래소
                   </a>
-                  <a href="deposit" className="blue_topbtn w-button">
+                  <a href="deposit" className="blue_topbtn w-button click">
                     자산 입출금
                   </a>
-                  <a href="qna" className="blue_topbtn w-button">
+                  <a href="qna" className="blue_topbtn w-button click">
                     고객센터
                   </a>
                 </div>

@@ -1,0 +1,364 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --foreground-rgb: 255, 255, 255; /* Đổi foreground thành màu trắng */
+  --background-start-rgb: 255, 255, 255; /* Đổi background start thành màu trắng */
+  --background-end-rgb: 255, 255, 255; /* Đổi background end thành màu trắng */
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+
+
+.body {
+  font-family: Nanumsquare, sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  margin: 0;
+    /* min-height: 100%; */
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    /* line-height: 20px; */
+    color: #333;
+}
+
+   
+.css-3uqybw {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.pageHeaderCom {
+    height: 30vh;
+    margin: 0px 15px;
+    padding-top: 10px;
+    border-radius: 4px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 960px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+   #A0 .contents {
+    background: #f4f5f8 url(https://kr-union.com/comm_k/img/pageHeader/A1c4cac4ca.jpg?1) no-repeat center;
+    background-size: cover;
+  }
+  .pageHeaderCom .contents {
+    height: 100%;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .pageHeaderCom .contents dl {
+      text-align: left;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      margin-bottom: 0px;
+  }
+  
+  .pageHeaderCom .contents dl dt {
+    font-size: 3em;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 0.2em;
+  }
+  
+  
+  #A3 {
+    padding-bottom: 6rem;
+  }
+  
+  
+  
+  
+  .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    --background-color: #1c1c1c;
+  }
+  
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto, .col-xxl-3, .col-xxl-9 {
+    position: relative;
+    width: 100%;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+  
+  .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  #A3 .sectionTitle {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  #A1 .sectionTitle, #A2 .sectionTitle, #A3 .sectionTitle, #A4 .sectionTitle, #A5 .sectionTitle, #A6 .sectionTitle {
+    margin-bottom: .8rem;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  
+  #A1 .sectionTitle h5, #A2 .sectionTitle h5, #A3 .sectionTitle h5, #A4 .sectionTitle h5, #A5 .sectionTitle h5, #A6 .sectionTitle h5 {
+      font-size: 1.5rem;
+  }
+  .sectionTitle h5 {
+      font-size: 1.8rem;
+      line-height: 1.4;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 700;
+  }
+  
+  #A3 figure {
+    display: -webkit-box;
+  }
+  
+  #A3 figure img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #A1, #A2, #A3, #A4, #A5, #A6 {
+    padding: 6rem 0 3rem;
+  }
+  
+  
+  #A1 .text, #A2 .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  @media (min-width: 992px) {
+    #A1 .text, #A2 .text, #A3 .text, #A4 .text, #A5 .text, #A6 .text {
+        padding-left: 2rem !important;
+    }
+  }
+  #A1 .text .textWrap, #A2 .text .textWrap {
+    margin-bottom: 5rem;
+  }
+  #A1 .sectionTitle, #A2 .sectionTitle, #A3 .sectionTitle, #A4 .sectionTitle, #A5 .sectionTitle, #A6 .sectionTitle {
+    margin-bottom: .8rem;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  
+  #A1 .sectionTitle h5, #A2 .sectionTitle h5, #A3 .sectionTitle h5, #A4 .sectionTitle h5, #A5 .sectionTitle h5, #A6 .sectionTitle h5 {
+    font-size: 1.5rem;
+  }
+  .sectionTitle h5 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  
+  
+  #A1 .text .body, #A2 .text .body, #A3 .text .body, #A4 .text .body, #A5 .text .body, #A6 .text .body {
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.8;
+    max-width: 360px;
+    font-size: .75rem;
+    margin-bottom: 1.5rem;
+  }
+  #A1 .row .img figure:nth-of-type(1) {
+    z-index: 100;
+    width: 40%;
+  }
+  
+  #A1 .img figure, #A2 .img figure {
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 4px 6px 9px 0 rgba(58, 62, 49, 0.05), 8px 22px 60px 0 rgba(57, 58, 48, 0.07);
+    box-shadow: 4px 6px 9px 0 rgba(58, 62, 49, 0.05), 8px 22px 60px 0 rgba(57, 58, 48, 0.07);
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    position: relative;
+    top: 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+  }
+  #A1 .img figure img, #A2 .img figure img {
+    width: 100%;
+  }
+  
+  #A2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f1f4fd), color-stop(78%, rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to bottom, #f1f4fd, rgba(255, 255, 255, 0) 78%);
+    padding-top: 7rem;
+  }
+  
+  
+  
+  
+  @media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+  }
+  #A2 .row .img figure:nth-of-type(1) {
+    z-index: 100;
+    width: 60%;
+  }
+  
+  
+  
+  #A2 .row .img figure:nth-of-type(2) {
+    z-index: 200;
+    top: -6rem;
+    right: -6rem;
+    width: calc(90% - 6rem);
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  
+  
+  .container .com {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 960px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  

@@ -13,7 +13,7 @@ export default function MainSection2() {
                 </div>
                 <div className="mt-6 text-center lg:mt-12">
                   <a
-                    href="login_form.php"
+                    href="login"
                     style={{ color: 'rgba(17, 17, 34)' }}
                     className="pyh-3 px-6 rounded-md text-lg font-medium bg-blue-600 text-white hover:bg-blue-700 transition duration-200 ease-in-out focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 mrh-2"
                   >
@@ -21,7 +21,7 @@ export default function MainSection2() {
                   </a>
                  
                   <a
-                    href="usd2.php"
+                    href="chart"
                     style={{ border: 'solid 1px #f8e39e', color: 'white' }}
                     className="pyh-3 px-6 rounded-md text-lg font-medium bg-blue-601 text-white hover:bg-blue-700 transition duration-200 ease-in-out focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 mrh-2"
                   >

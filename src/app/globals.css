@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --foreground-rgb: 255, 255, 255; /* Đổi foreground thành màu trắng */
   --background-start-rgb: 255, 255, 255; /* Đổi background start thành màu trắng */
@@ -32,113 +31,419 @@ body {
     text-wrap: balance;
   }
 }
-
-
-
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  
-  color: #fff;
+.root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-.header {
+
+
+
+
+.body {
+  font-family: Nanumsquare, sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  margin: 0;
+    /* min-height: 100%; */
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    /* line-height: 20px; */
+    color: #333;
+}
+
+   
+.css-3uqybw {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 30px;
-  background-color: #212631;
+  flex-direction: column;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+  Header_csss
+
+  .top_1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    min-width: 1040px;
+    padding-right: 100px;
+    padding-left: 100px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #172d3e;
+  }
+
+.top_containner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   height: 100px;
-}
-
-.header .logo img {
-  width: 190px;
-  cursor: pointer;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
+  padding: 8px 30px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
-  flex: 1;
-  margin: 0 20px;
-}
-
-.navbar ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.navbar ul li {
-  margin-right: 40px;
-  position: relative;
-}
-
-.navbar ul li:last-child {
-  margin-right: 0;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.dropdownMenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
   background-color: #212631;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  list-style: none;
-  padding: 10px 0;
 }
 
-.dropdownMenu li {
-  padding: 10px 20px;
+.logo_btn.w--current {
+  padding-bottom: 10px;
 }
 
-.dropdownMenu li a {
-  color: #fff;
+.logo_btn {
+  position: relative;
+  z-index: 5;
+}
+
+.logoicon {
+  width: 190px;
+}
+
+.topmenuframe {
+  z-index: 130;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 650px;
+  height: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -45px;
+}
+.topmeuwrap {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.topmenubtn {
+  position: relative;
+  z-index: 130;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-decoration: none;
 }
 
-.dropdown:hover .dropdownMenu {
-  display: block;
-}
-
-.userActions {
+.topmenu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
-  gap: 10px;
+  color: #fff;
 }
 
-.userActions button {
+.userinfobox {
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+}
+
+.myinfobtn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 160px;
   height: 40px;
   margin-left: 25px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
   background-color: #f8e39e;
-  transition: background-color 400ms ease, border 400ms ease;
+  -webkit-transition: background-color 400ms ease, color 400ms ease;
+  transition: background-color 400ms ease, color 400ms ease;
   color: black;
-  border: 1px solid transparent; /* Mặc định không có viền */
 }
 
-.userActions button:focus {
-  background-color: #000; /* Đổi màu nền khi focus */
-  color: #f8e39e; /* Đổi màu chữ khi focus */
-  border: 1px solid #f8e39e; /* Thêm viền khi focus */
-  outline: none; /* Bỏ viền mặc định của focus */
+.myinfobtn:focus {
+  background-color: black; /* Đổi màu nền thành màu đen khi focus */
+  color: white; /* Đổi màu chữ thành màu trắng khi focus */
+  outline: none; /* Loại bỏ viền focus mặc định nếu cần */
+}
+
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+
+  color: rgb(9, 0, 0);
+  /* border: 0; */
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+  text-align: center ;
+}
+
+.mobilemenuframe {
+  display: none;
+
+}
+
+.mobilemenubox {
+  -o-object-fit: none;
+  object-fit: none;
+}
+.menuboxwrap.mobile {
+  display: none;
 }
 
 
 
+
+.menuboxwrap {
+  position: absolute;
+  left: 0%;
+  top: 80%;
+  right: auto;
+  bottom: auto;
+  z-index: 2;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.menubtn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+  text-decoration: none;
+}
+
+.menubox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  padding: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.15);
+  -webkit-transition: color 200ms ease, background-color 200ms ease;
+  transition: color 200ms ease, background-color 200ms ease;
+}
+
+
+.m_txt {
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.m_txt2 {
+  margin-top: 8px;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  font-size: 12.8px;
+  line-height: 24px;
+}
+
+
+.menuboxwrap.active {
+  display: flex; /* Hiển thị khi thêm class active */
+}
+
+
+
+.menubtn:hover {
+  background-color: #f5f5f5; /* Hiệu ứng khi hover */
+}
+
+
+
+
+/* Điều chỉnh logo và nút menu hamburger cho màn hình nhỏ */
+@media screen and (max-width: 768px) {
+  .top_1 {
+    flex-direction: row;
+    height: auto;
+    padding: 0 20px;
+    min-width: 100%;
+  }
+
+  .logoicon {
+    width: 190px; /* Điều chỉnh kích thước logo */
+  }
+
+  .topmenuframe, .topmenu {
+    display: none; /* Ẩn menu trên màn hình nhỏ */
+  }
+
+  .mobilemenuframe {
+    display: flex; /* Hiển thị nút hamburger cho màn hình nhỏ */
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+  }
+
+  .mobilemenubox {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
+/* Hiệu ứng khi mở menu trên màn hình nhỏ */
+
+@media screen and (max-width: 767px) {
+  .mobilemenuframe {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobilebtn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 13vw;
+      height: 9vw;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-style: solid;
+      border-width: 1px;
+      border-color: hsla(0, 0%, 100%, 0.15);
+      border-radius: 0.5vw;
+      margin-left: 200px;
+   
+  }
+}
+@media screen and (max-width: 767px) {
+  .menucion {
+      width: auto;
+      height: 7vw;
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+      margin-left: 16px;
+      margin-top: 6px;
+     
+  }
+}
+
+
+
+
+
+
+
+
+
+  Body_css
+
+
+  
 .main_frame {
   display: -webkit-box;
   display: -webkit-flex;
@@ -152,6 +457,9 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
+
+
 
 
 .banner {
@@ -684,7 +992,7 @@ login , register css
   height: inherit;
   top: 0;
   left: 0;
-  background: #f4f5f8 url(https://kr-union.com/comm_k/img/pageHeader/M1-2cfcdcfcd.jpg?0) no-repeat center;
+  background:  url(https://kr-union.com/comm_k/img/pageHeader/M1-2cfcdcfcd.jpg?0) no-repeat center;
   background-position: 50%;
   background-repeat: repeat;
   background-size: cover;
@@ -1003,17 +1311,9 @@ chart css
 .top._2 {
   padding-right: 0px;
   padding-left: 0px;
-}
+  height: 60px;
 
-.top {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50px;
-  min-width: 1040px;
-  padding-right: 100px;
-  padding-left: 100px;
+
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1021,12 +1321,15 @@ chart css
   background-color: #172d3e;
 }
 
+
 .top_right {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   min-width: 620px;
+  color: #fff;
+ 
 }
 
 .logo_block {
@@ -1066,7 +1369,7 @@ chart css
 }
 
 .blue_topbtn.click {
-  background-color: rgba(130, 186, 246, 0.1);
+ 
   color: #82baf6;
 }
 
@@ -1091,17 +1394,7 @@ chart css
   transition: background-color 400ms ease;
   font-weight: 500;
 }
-.w-button {
-  display: inline-block;
-  padding: 9px 15px;
 
-  color: white;
-  /* border: 0; */
-  line-height: inherit;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 0;
-}
 
 .top_left {
   display: -webkit-box;
@@ -1118,6 +1411,7 @@ chart css
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: -41px;
 }
 
 .main_bottombtn {
@@ -2014,4 +2308,52 @@ qna css
 .wrap, content {
   display: block;
   min-height: 100vh;
+}
+
+
+
+
+
+ company_css
+
+
+
+ no_css
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  figure .mobile {
+     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  figure .desktop {
+     display: none;
+  }
+}
+
+figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainpop_warp::-webkit-scrollbar {
+  display: none;
+}
+
+.mainpop_warp {
+  -ms-overflow-style: none;
 }

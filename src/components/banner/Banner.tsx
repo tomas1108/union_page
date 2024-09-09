@@ -15,7 +15,7 @@ const Banner = () => {
           글로벌 증권 거래 플랫폼&양적 헤지 기구 및 안정성과 신뢰성을 보장하는 디지털 자산 거래 및 자산 관리 서비스 제공
         </div>
         <div className="m_btnwrap">
-          <a href="usd2.php" className="service_btn w-buttonMain">
+          <a href="chart" className="service_btn w-buttonMain">
             거래하기
           </a>
         </div>
@@ -23,7 +23,7 @@ const Banner = () => {
           src="bitcall/return_11.png"
           loading="lazy"
           sizes="(max-width: 479px) 87vw, (max-width: 767px) 86vw, 500.0000305175781px"
-          srcSet="/bitcall/return_11-p-500.png 500w, /bitcall/return_11.png 730w"
+          srcSet="https://kr-union.com/bitcall/return_11.png"
           alt=""
           className="image-18"
         />

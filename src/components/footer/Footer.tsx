@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="fbox">
               <div className="f_wrap">
                 <div className="ftxt">거래하기</div>
-                <a href="btc.php" className="flink w-inline-block">
+                <a href="chart" className="flink w-inline-block">
                   <div className="ftxt2">거래하기</div>
                 </a>
               </div>
