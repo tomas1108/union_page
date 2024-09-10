@@ -801,6 +801,12 @@ h2 {
   padding-bottom: 80px;
   background-color: #191919;
 }
+
+@media screen and (max-width: 767px) {
+  .footerMain {
+      padding: 6vw 6vw 16vw;
+  }
+}
 .fwrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -815,6 +821,104 @@ h2 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+  .fwrap {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .f_wrap {
+      width: 50%;
+      margin-bottom: 6vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ftxt {
+      margin-bottom: 3vw;
+      font-size: 3.5vw;
+      line-height: 4vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ftxt2 {
+      margin-bottom: 1vw;
+      font-size: 3vw;
+      line-height: 4vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .finfo {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 7vw;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .text-block-5 {
+      width: 50vw;
+      font-size: 3vw;
+      line-height: 4vw;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .b_korboticon {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      right: auto;
+      bottom: auto;
+      height: 12vw;
+      margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fbox {
+      width: 100%;
+      padding-top: 15vw;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+  }
 }
 
 .w-inline-block {
