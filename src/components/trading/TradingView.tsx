@@ -12,7 +12,7 @@ export default function TradingViewWidget() {
         script.innerHTML = JSON.stringify({
           symbols: [
             [
-              "USD",
+              "BTC",
               "FX_IDC:USDKRW|1D"
             ]
           ],

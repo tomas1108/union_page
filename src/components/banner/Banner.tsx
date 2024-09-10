@@ -19,14 +19,14 @@ const Banner = () => {
             거래하기
           </a>
         </div>
-        <img
+        {/* <img
           src="bitcall/return_11.png"
           loading="lazy"
           sizes="(max-width: 479px) 87vw, (max-width: 767px) 86vw, 500.0000305175781px"
           srcSet="https://kr-union.com/bitcall/return_11.png"
           alt=""
           className="image-18"
-        />
+        /> */}
         <div className="main_boxwarp">
           <div className="main_box">
             <img src="https://kr-union.com/bitcall/return_24.png" loading="lazy" alt="" className="image-12" />

@@ -13,8 +13,8 @@ export default function Home() {
       <Header />
       <main>
         <Banner />
-        <MainSection />
         <TradingViewWidget />
+        <MainSection />
         <MainSection2 />
       </main>
        <Footer />

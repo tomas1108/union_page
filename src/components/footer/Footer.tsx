@@ -4,7 +4,7 @@ export default function Footer() {
         <footer className="footerMain">
           <div className="fwrap">
             <div className="finfo">
-              <a href="bitcall/main.html" aria-current="page" className="b_korbotbtn w-inline-block w--current">
+              <a href="/" aria-current="page" className="b_korbotbtn w-inline-block w--current">
                 <img src="https://kr-union.com/bitcall/bitcall_2.png" loading="lazy" alt="" className="b_korboticon" />
               </a>
   

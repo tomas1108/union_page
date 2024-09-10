@@ -176,11 +176,12 @@ const Company: React.FC = () => {
                   </div>
                   <div className="body row">
                     <dl className="col-12 col-sm-6">
-                      <dt>신뢰 및 보안</dt>
-                      <dd>
-                        우리는 신뢰를 가장 중요한 가치로 생각하며, 높은 수준의
-                        보안을 통해 고객정보와 자산을 보호합니다.
-                      </dd>
+                    <dt>
+        신뢰 및 보안
+    </dt>
+    <dd>
+        우리는 신뢰를 가장 중요한 가치로 생각하며, 높은 수준의 보안을 통해 고객정보와 자산을 보호합니다.
+    </dd>
                     </dl>
                     <dl className="col-12 col-sm-6">
                       <dt>결과 중심주의</dt>

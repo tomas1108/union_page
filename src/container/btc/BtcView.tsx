@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Swal from "sweetalert2";
 
-const TradingPage: React.FC = () => {
+const BtcView: React.FC = () => {
   const gourl = (url: string) => {
     window.location.href = url;
   };
@@ -140,7 +140,7 @@ const TradingPage: React.FC = () => {
             const newRow = `
                 <div class='t_table'>
                   <div class='t_toptxt'>${betHistory.betAccountTime}</div>
-                  <div class='t_toptxt'>USD/KRW</div>
+                  <div class='t_toptxt'>USD/BTC</div>
                   <div class='t_toptxt'>${formattedAmount}원</div>
                   <div class='t_toptxt _3 ${BettingClass}'>${betHistory.bet_type}</div>
                   <div class='t_toptxt ${resultClass}'>
@@ -166,7 +166,7 @@ const TradingPage: React.FC = () => {
     script.onload = () => {
       new (window as any).TradingView.widget({
         autosize: true,
-        symbol: "FX_IDC:USDKRW",
+        symbol: "BINANCE:BTCUSDT",
         interval: "2",
         timezone: "Asia/Seoul",
         theme: "dark",
@@ -417,7 +417,7 @@ const TradingPage: React.FC = () => {
                       <div className="infobox">
                         <div className="coinbox">
                           <img
-                            src="https://kr-union.com/img/usd_icon.png"
+                            src="https://kr-union.com/img/b_icon.png"
                             loading="lazy"
                             alt=""
                             className="image-15"
@@ -428,7 +428,7 @@ const TradingPage: React.FC = () => {
                             className="cname itemName"
                             style={{ margin: 0, color: "white" }}
                           >
-                            USD 2분
+                            BTC 1분
                           </h2>
                         </div>
                         <div className="div-block-88">
@@ -547,7 +547,7 @@ const TradingPage: React.FC = () => {
                             className="t_text _2 contracttime"
                             id="contractTime"
                           >
-                            21:47
+                            03:50   
                           </div>
                         </div>
                         <div className="trow">
@@ -557,7 +557,7 @@ const TradingPage: React.FC = () => {
                             style={{ color: "white" }}
                             id="nextLeftTime"
                           >
-                            99
+                             57    
                           </div>
                         </div>
                       </div>
@@ -736,70 +736,70 @@ const TradingPage: React.FC = () => {
                       <div className="list_hidewarp2" id="listContent">
                         <div className="t_table">
                           <div className="t_toptxt">2024-09-03 15:09</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">100,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-09-03 17:15</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">5,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 21:52</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">500,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 21:49</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">500,000원</div>
                           <div className="t_toptxt _3 type-cancel">SHORT</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 21:46</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">500,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 05:35</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">1,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 05:34</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">2,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 05:32</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">1,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 04:59</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">1,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 04:06</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">1,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
@@ -831,70 +831,70 @@ const TradingPage: React.FC = () => {
                       <div className="list_hidewarp2" id="listContent">
                         <div className="t_table">
                           <div className="t_toptxt">2024-09-03 15:09</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">100,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-09-03 17:15</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">5,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 21:52</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">500,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 21:49</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">500,000원</div>
                           <div className="t_toptxt _3 type-cancel">SHORT</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 21:46</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">500,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 05:35</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">1,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-success">익절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 05:34</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">2,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 05:32</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">1,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 04:59</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">1,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
                         </div>
                         <div className="t_table">
                           <div className="t_toptxt">2024-08-19 04:06</div>
-                          <div className="t_toptxt">USD/KRW</div>
+                          <div className="t_toptxt">USD/BTC</div>
                           <div className="t_toptxt">1,000,000원</div>
                           <div className="t_toptxt _3 type-success">LONG</div>
                           <div className="t_toptxt result-failure">손절</div>
@@ -942,4 +942,4 @@ const TradingPage: React.FC = () => {
   );
 };
 
-export default TradingPage;
+export default BtcView;

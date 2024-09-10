@@ -31,14 +31,14 @@ const MyPageView = () => {
             <div className="mypage-section">
                 <h3>로그인 비밀번호 변경</h3>
                 <div className="mypage-password">
-                    <div className="info-row">
-                        <label>기존 비밀번호</label>
+                    <div className="info-row-bot">
+                        <label style={{marginRight:'20px'}}>기존 비밀번호</label>
                         <input type="password" />
                     </div>
-                    <div className="info-row">
-                        <label>새로운 비밀번호</label>
+                    <div className="info-row-bot">
+                        <label style={{marginRight:'5px'}}>새로운 비밀번호</label>
                         <input type="password" />
-                        <label>비밀번호 확인</label>
+                        <label style={{marginRight:'5px'}}>비밀번호 확인</label>
                         <input type="password" />
                     </div>
                 </div>
