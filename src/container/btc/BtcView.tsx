@@ -1,11 +1,17 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
 const BtcView: React.FC = () => {
-  const gourl = (url: string) => {
-    window.location.href = url;
-  };
+    const [minutes, setMinutes] = useState(1);
+    const gourl = (minute: string | React.SetStateAction<number>) => {
+        const parsedMinute = typeof minute === "string" ? parseInt(minute) : minute;
+       
+        setMinutes(parsedMinute);
+        // window.location.reload();
+    
+        
+    };
 
   const typeSelect = () => {
     const element = document.getElementById("typeSelect");
@@ -469,7 +475,7 @@ const BtcView: React.FC = () => {
                         }}
                       >
                         <div
-                          onClick={() => gourl("usd")}
+                          onClick={() => gourl("1")}
                           className="time1"
                           style={{ width: "30%" }}
                         >
@@ -489,7 +495,7 @@ const BtcView: React.FC = () => {
                           </button>
                         </div>
                         <div
-                          onClick={() => gourl("usd2")}
+                          onClick={() => gourl("2")}
                           className="time2"
                           style={{ width: "30%" }}
                         >
@@ -509,7 +515,7 @@ const BtcView: React.FC = () => {
                           </button>
                         </div>
                         <div
-                          onClick={() => gourl("usd5")}
+                          onClick={() => gourl("5")}
                           className="time5"
                           style={{ width: "30%" }}
                         >
